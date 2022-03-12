@@ -1,0 +1,33 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+ printf ("use a for addition, s for subtraction, m for multiplication, d for division\n" );
+char c = get_char("operator function:");
+int x = get_int( "x:");
+int y = get_int( "y:");
+
+
+if (c == 'a')
+{
+printf ("%i\n", x+y);}
+
+else if (c == 's'){
+    printf ("%i\n", x-y);
+}
+
+else if (c == 'm')
+{
+    printf ("%i\n", x*y);
+
+}
+else if (c == 'd')
+{
+    printf("%i\n", x/y);
+    }
+
+else
+{
+    printf("operstion invalid\n");}
+};
